@@ -8,10 +8,10 @@ import Home from './pages/home/Home'
 function App() {
 
   return (
-    <div className='w-[85%] m-auto bg-black'>
+    <div className='w-[90%] m-auto'>
       <Header />
-      <About/>
       <Home />
+      <About/>
       <Contact />
       <Projects />
 
