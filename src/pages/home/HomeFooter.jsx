@@ -3,7 +3,7 @@
 const HomeFooter = () => {
   return (
     <div>
-      <div className="mt-[10rem] md:mt-[3rem] w-full pb-3">
+      <div className=" md:mt-[3rem] w-full pb-3">
         <hr />
         <div className="md:flex flex-row py-7 justify-between xl:gap-60 gap-20 flex-nowrap">
           <div className="first flex justify-between xl:gap-60 gap-[2rem]">

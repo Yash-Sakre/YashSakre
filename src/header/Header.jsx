@@ -21,7 +21,7 @@ const Header = () => {
         <li className='menuList text-[#6f6f6f] text-3rem'> Home</li>
         <li className='menuList text-[#6f6f6f] text-3rem'> Projects</li>
         <li className='menuList text-[#6f6f6f] text-3rem'> About</li>
-        <li className='menuList text-[#6f6f6f] text-3rem'> Contact</li>
+        <li className='menuList text-[#6f6f6f] text-3rem'> Contact</li> 
         </ul>
 
 

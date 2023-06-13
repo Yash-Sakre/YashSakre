@@ -1,0 +1,34 @@
+[
+    {
+      "imagePath": "../assests/html5.svg",
+      "skillName": "HTML"
+    },
+    {
+      "imagePath": "../assests/css3.svg",
+      "skillName": "CSS"
+    },
+    {
+      "imagePath": "../assests/javascript.svg",
+      "skillName": "Javascript"
+    },
+    {
+      "imagePath": "../assests/react.svg",
+      "skillName": "React"
+    },
+    {
+      "imagePath": "../assests/tailwind.svg",
+      "skillName": "Tailwind"
+    },
+    {
+      "imagePath": "../assests/python.svg",
+      "skillName": "Python"
+    },
+    {
+      "imagePath": "../assests/django.svg",
+      "skillName": "Django"
+    },
+    {
+      "imagePath": "../assests/git.svg",
+      "skillName": "Git & Github"
+    }
+  ]
