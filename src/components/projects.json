@@ -1,0 +1,35 @@
+[
+    {
+      "imagePath": "../assests/portfolio.png",
+      "ProjName": "FineCode",
+      "Projtitle": "Code Analysis Platform",
+      "ProjDesc": "FineCode is a project that revolutionizes coding assignment evaluation by providing a platform for students to register, submit, and evaluate their codes. It offers visual analysis, rankings, and valuable feedback to instructors and students.",
+      "Github": "https://github.com/Yash-Sakre/FineCode",
+      "Live": "https://github.com/Yash-Sakre/FineCode"
+    },
+    {
+        "imagePath": "../assests/portfolio.png",
+        "ProjName": "Ys.world",
+        "Projtitle": "Portfolio Website",
+        "ProjDesc": "My own small World",
+        "Github": "https://github.com/Yash-Sakre/FineCode",
+        "Live": "https://github.com/Yash-Sakre/FineCode"
+      },
+      {
+        "imagePath": "../assests/test.png",
+        "ProjName": "FineCode",
+        "Projtitle": "Code Analysis Platform",
+        "ProjDesc": "FineCode is a project that revolutionizes coding assignment evaluation by providing a platform for students to register, submit, and evaluate their codes. It offers visual analysis, rankings, and valuable feedback to instructors and students.",
+        "Github": "https://github.com/Yash-Sakre/FineCode",
+        "Live": "https://github.com/Yash-Sakre/FineCode"
+      },
+      {
+        "imagePath": "../assests/test.png",
+        "ProjName": "FineCode",
+        "Projtitle": "Code Analysis Platform",
+        "ProjDesc": "FineCode is a project that revolutionizes coding assignment evaluation by providing a platform for students to register, submit, and evaluate their codes. It offers visual analysis, rankings, and valuable feedback to instructors and students.",
+        "Github": "https://github.com/Yash-Sakre/FineCode",
+        "Live": "https://github.com/Yash-Sakre/FineCode"
+      }
+  ]
+  

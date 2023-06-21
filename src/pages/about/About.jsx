@@ -25,7 +25,7 @@ const imageMap = {
 };
 const About = () => {
   return (
-    <div className="xl:min-h-screen flex flex-col ">
+    <div className="xl:min-h-screen flex flex-col " id="about">
       <div className="text-[3rem]">About Me.</div>
       <hr />
       <div className=" md:flex py-4 items-center gap-60">
@@ -54,7 +54,7 @@ const About = () => {
         <div className="flex flex-col flex-wrap mt-10">
           <div className="flex flex-row flex-wrap gap-10 md:gap-20  items-center justify-center text-center">
             {skills.map((skill, index) => (
-              <div key={index}>
+              <div key={index} className="flex flex-col items-center">
                 <img
                   className="object-cover w-14 "
                   src={imageMap[skill.imagePath]}
