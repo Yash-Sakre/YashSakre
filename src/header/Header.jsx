@@ -9,10 +9,10 @@ const Header = () => {
 
  const closenav = () => setnav(false)
   return (
-    <div className='navBar flex justify-between items-center py-[1rem] sticky top-0 z-[1000] bg-white'>
+    <div className='navBar flex justify-between items-center py-[1rem] sticky top-0 z-[1000] bg-white '>
       <div className='logoDiv'>
         <h1 className='logo text-[2rem] text-blueColor'>
-          Ys.
+          <a href="/">Ys.</a>
         </h1>
       </div>
 
