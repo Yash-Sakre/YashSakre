@@ -8,25 +8,24 @@ import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
 import Footer from "./Footer/Footer";
 import Landing from "./pages/Landing/Landing";
-
 function App() {
+  
   return (
-    <div className="w-[90%] m-auto">
-      <Header />
-      
-      <Router>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          
-          <Route path="home" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
-          
-        </Routes>
+    <div className="dark:bg-black dark:text-white">
+      <div className="w-[90%] m-auto ">
         
-      </Router>
-      <Footer/>
+        <Header />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="home" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
+          </Routes>
+        </Router>
+        <Footer />
+      </div>
     </div>
   );
 }

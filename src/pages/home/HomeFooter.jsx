@@ -1,8 +1,8 @@
-
+import { motion } from "framer-motion"
 
 const HomeFooter = () => {
   return (
-    <div>
+    <motion.div animate={{y:0}} initial={{y:-1000}} transition={{ type: "spring", stiffness: 50 }} >
       <div className=" md:mt-[3rem] w-full pb-3">
         <hr />
         <div className="md:flex flex-row py-7 justify-between xl:gap-60 gap-20 flex-nowrap">
@@ -30,7 +30,7 @@ const HomeFooter = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

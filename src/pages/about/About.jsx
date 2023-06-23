@@ -25,7 +25,7 @@ const imageMap = {
 };
 const About = () => {
   return (
-    <div className="xl:min-h-screen flex flex-col " id="about">
+    <div  className="xl:min-h-screen flex flex-col " id="about">
       <div className="text-[3rem]">About Me.</div>
       <hr />
       <div className=" md:flex py-4 items-center gap-60">
