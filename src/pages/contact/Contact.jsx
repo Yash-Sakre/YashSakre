@@ -33,9 +33,9 @@ const Contact = () => {
     <div className="min-h-[80vh]" id="contact">
       <div className="text-[3rem]">Contact</div>
       <hr />
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-black">
         <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
-          <p className="mb-8 lg:mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          <p className="mb-8 lg:mb-8 font-light text-center text-gray-500 dark:text-white sm:text-xl">
             Feel free to reach out and connect with me to discuss your frontend
             development needs.
           </p>
