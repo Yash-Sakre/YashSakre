@@ -45,7 +45,7 @@ const Footer = () => {
         Developed by 
         <a
           className="text-neutral-800 dark:text-neutral-400"
-          href=""
+          href="/"
         >
           : Yash Sakre
         </a>

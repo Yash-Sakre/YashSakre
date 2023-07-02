@@ -5,13 +5,13 @@
       "Projtitle": "Code Analysis Platform",
       "ProjDesc": "FineCode is a project that revolutionizes coding assignment evaluation by providing a platform for students to register, submit, and evaluate their codes. It offers visual analysis, rankings, and valuable feedback to instructors and students.",
       "Github": "https://github.com/Yash-Sakre/FineCode",
-      "Live": "https://github.com/Yash-Sakre/FineCode",
+        
       "tech": " Javascript, Python, Django, HTML CSS"
       
     },
     {
         "imagePath": "../assests/portfolio.png",
-        "ProjName": "Ys.world",
+        "ProjName": "Ys.tech",
         "Projtitle": "Portfolio Website",
         "ProjDesc": "An engaging frontend developer portfolio to showcase my expertise, highlight my projects, and attract clients and employers. Creating visually appealing designs and seamless user experiences to leave a lasting impression.",
         "Github": "https://github.com/Yash-Sakre/FineCode",
@@ -23,17 +23,9 @@
         "ProjName": "OpinHacks",
         "Projtitle": "36-Hour Hackathon Website",
         "ProjDesc": "A dynamic hackathon website to unite passionate individuals, foster innovation, and provide a platform for collaborative problem-solving. Featuring event details, registration, project submissions, and engaging community features to promote creativity and teamwork.",
-        "Github": "https://github.com/Yash-Sakre/FineCode",
+        "Github": "https://github.com/JayashTripathy/OpInHacks",
         "Live": "https://opinhacks.co/",
         "tech": "React, Tailwind"
-      },
-      {
-        "imagePath": "../assests/test.png",
-        "ProjName": "FineCode",
-        "Projtitle": "Code Analysis Platform",
-        "ProjDesc": "FineCode is a project that revolutionizes coding assignment evaluation by providing a platform for students to register, submit, and evaluate their codes. It offers visual analysis, rankings, and valuable feedback to instructors and students.",
-        "Github": "https://github.com/Yash-Sakre/FineCode",
-        "Live": "https://github.com/Yash-Sakre/FineCode"
       }
   ]
   

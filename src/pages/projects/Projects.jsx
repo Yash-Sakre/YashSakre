@@ -23,7 +23,7 @@ const Projects = () => {
             <div className="rounded-lg">
               <div className="relative flex h-60 justify-center overflow-hidden rounded-lg ">
                 <div className="w-full border-2">
-                  <img className="" src={imageMap[project.imagePath]} alt="" />
+                  <img className="rounded-lg" src={imageMap[project.imagePath]} alt="" />
                 </div>
               </div>
 
@@ -55,6 +55,7 @@ const Projects = () => {
                       >
                         Github
                       </a>
+                      {project.Live && (  // Add a conditional rendering statement for Live button
                       <a
                         href={project.Live}
                         target="__blank"
@@ -62,6 +63,7 @@ const Projects = () => {
                       >
                         Live
                       </a>
+                    )}
                     </p>
                   </div>
                 </div>

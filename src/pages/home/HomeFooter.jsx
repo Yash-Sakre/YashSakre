@@ -14,7 +14,7 @@ const HomeFooter = () => {
 
             <div className="w-[100%] ">
               <div className=" text-linkColor">Hire Me</div>
-              <a href=" " >Resume</a>
+              <a href="https://drive.google.com/file/d/1IGd5kz41pmZugLd_G14pGY0gn2SQv_hG/view?usp=sharing" target="__blank" >Resume</a>
             </div>
           </div>
           <div className="second flex justify-between xl:gap-60 gap-[2rem] md:mt-0 mt-7">

@@ -9,7 +9,7 @@ import pythonImage from "../../assets/python.svg";
 import djangoImage from "../../assets/django.svg";
 import gitImage from "../../assets/git.svg";
 // Add more image imports as needed
-import download from "../../assets/download.jpeg";
+import about from "../../assets/about.png";
 
 const imageMap = {
   "../assests/html5.svg": htmlImage,
@@ -24,6 +24,9 @@ const imageMap = {
   // Map more image paths to imported images
 };
 const About = () => {
+  function resume() {
+    window.open("https://drive.google.com/file/d/1IGd5kz41pmZugLd_G14pGY0gn2SQv_hG/view?usp=sharing");
+  }
   return (
     <div  className="xl:min-h-screen flex flex-col " id="about">
       <div className="text-[3rem]">About Me.</div>
@@ -44,13 +47,13 @@ const About = () => {
           my problem-solving abilities and equipped me with the tools necessary
           to excel in a professional environment.
           <div>
-            <button className="my-3 py-3 px-9 text-sm font-medium text-center border-2 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+            <button onClick={resume} className="my-3 py-3 px-9 text-sm font-medium text-center border-2 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               Resume
             </button>
           </div>
         </div>
         <div className="">
-          <img className="mx-auto" src={download} alt="" />
+          <img className="mx-auto" src={about} alt="" width="70%"/>
         </div>
       </div>
 
