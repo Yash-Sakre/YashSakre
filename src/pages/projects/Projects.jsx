@@ -21,7 +21,7 @@ const Projects = () => {
             className="relative mx-auto w-full max-w-lg pt-4 pb-[4rem]"
           >
             <div className="rounded-lg">
-              <div className="relative flex h-60 justify-center overflow-hidden rounded-lg ">
+              <div className="relative flex md:h-60 justify-center overflow-hidden rounded-lg ">
                 <div className="w-full border-2">
                   <img className="rounded-lg" src={imageMap[project.imagePath]} alt="" />
                 </div>
