@@ -21,7 +21,10 @@ const Home = () => {
         </motion.div>
 
         <motion.div animate={{y:0}} initial={{y:-1000}} transition={{ type: "spring", stiffness: 30 }} className="hidden md:block m-5 ">
-          <Link to="projects" className="cursor-pointer">
+          <Link to="projects" className="cursor-pointer" spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
             <img src={arrow} alt="" />
             <p>Projects</p>
           </Link>
