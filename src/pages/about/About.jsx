@@ -25,35 +25,41 @@ const imageMap = {
 };
 const About = () => {
   function resume() {
-    window.open("https://drive.google.com/file/d/1IGd5kz41pmZugLd_G14pGY0gn2SQv_hG/view?usp=sharing");
+    window.open(
+      "https://drive.google.com/file/d/1IGd5kz41pmZugLd_G14pGY0gn2SQv_hG/view?usp=sharing"
+    );
   }
   return (
-    <div  className="xl:min-h-screen flex flex-col " id="about">
+    <div className="xl:min-h-screen flex flex-col " id="about">
       <div className="text-[3rem]">About Me.</div>
       <hr />
-      <div className=" md:flex py-4 items-center gap-60">
-        <div className="md:w-[50%]">
-          Currently, in my final year of studies pursuing a Bachelor&apos; s
-          degree in Computer Science, I have developed a strong foundation in
-          frontend technologies such as HTML, CSS, and JavaScript. I have also
-          gained experience with modern frameworks including React and Tailwind
-          CSS, through personal projects and coursework.
+      <div className=" md:flex py-4 items-center lg:gap-60 ">
+        <div className="w-[100%] lg:w-[50%]">
+          A final year Computer Science student with a strong passion for
+          frontend development. Proficient in HTML, CSS, and JavaScript, I have
+          hands-on experience with modern frameworks like React and Tailwind
+          CSS. Through coding bootcamps, open-source projects, and coursework, I
+          have honed my problem-solving abilities and gained a solid
+          understanding of software development principles. Notably, I have
+          worked as a frontend developer in various Hackathon projects, thriving
+          in intense and collaborative environments.
           <br />
           <br />
-          Although I do not have professional experience as a developer, I am a
-          fast learner with a strong work ethic. I have actively sought out
-          opportunities to enhance my skills, participating in coding bootcamps
-          and engaging in open-source projects. These experiences have sharpened
-          my problem-solving abilities and equipped me with the tools necessary
-          to excel in a professional environment.
+          As a fast learner with a strong work ethic, I constantly strive for
+          improvement and stay updated with the latest frontend trends. My goal
+          is to deliver high-quality, visually appealing code that ensures
+          exceptional user experiences.
           <div>
-            <button onClick={resume} className="my-3 py-3 px-9 text-sm font-medium text-center border-2 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+            <button
+              onClick={resume}
+              className="my-3 py-3 px-9 text-sm font-medium text-center border-2 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            >
               Resume
             </button>
           </div>
         </div>
         <div className="">
-          <img className="mx-auto" src={about} alt="" width="70%"/>
+          <img className="mx-auto md:w-[70%]" src={about} alt="" />
         </div>
       </div>
 

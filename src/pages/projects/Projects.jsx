@@ -71,6 +71,7 @@ const Projects = () => {
                 <div className="mt-2 border-t border-gray-200 pt-3">
                   {project.ProjDesc}
                 </div>
+                <br />
                 <div className="mt-2">
                   <div>Tech Stack</div>
                   <hr /> 
