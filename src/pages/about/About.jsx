@@ -9,7 +9,8 @@ import pythonImage from "../../assets/python.svg";
 import djangoImage from "../../assets/django.svg";
 import gitImage from "../../assets/git.svg";
 // Add more image imports as needed
-import about from "../../assets/about.png";
+import Png1 from "../../assets/about/Png1.png"
+
 
 const imageMap = {
   "../assests/html5.svg": htmlImage,
@@ -58,8 +59,8 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div className="">
-          <img className="mx-auto md:w-[70%]" src={about} alt="" />
+        <div className=" ">
+          <img className="mx-auto md:w-[70%] rounded-full border-2 object-contain " src={Png1} alt="" />
         </div>
       </div>
 
