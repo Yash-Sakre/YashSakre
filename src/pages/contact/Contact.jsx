@@ -22,8 +22,8 @@ const Contact = () => {
 
           <div className="w-fit"> 
              <div className="flex flex-col gap-4">
-             <a href="" className="flex flex-row gap-1 hover"> <MdEmail className="text-2xl"/> yashsakre940@gmail.com </a>
-             <a href="" className="flex flex-row gap-1 hover w-fit"> <AiFillLinkedin className="text-2xl"/> Linkedin</a>
+             <a href="mailto:yashsakre940@gmail.com" target="__blank" className="flex flex-row gap-1 hover"> <MdEmail className="text-2xl"/> yashsakre940@gmail.com </a>
+             <a href="https://www.linkedin.com/in/yash-sakre/" target="__blank" className="flex flex-row gap-1 hover w-fit"> <AiFillLinkedin className="text-2xl"/> Linkedin</a>
              </div>
           </div>
         </div>
