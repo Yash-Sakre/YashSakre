@@ -11,7 +11,7 @@ import Landing from "./pages/Landing/Landing";
 function App() {
   
   return (
-    <div className="dark:bg-black dark:text-white">
+    <div className="dark:bg-black dark:text-white selection:bg-black selection:text-white">
       <div className="w-[90%] m-auto ">
         
         <Header />

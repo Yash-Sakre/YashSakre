@@ -21,7 +21,7 @@ const Header = () => {
 
       <div className="flex gap-8">
         <ul className="hidden md:flex gap-8">
-          <li className="menuList text-[#6f6f6f] text-3rem">
+          <li className="menuList text-[#6f6f6f] text-3rem ">
             {" "}
             <Link to="/" spy={true} smooth={true} offset={-100} duration={500}>
               Home

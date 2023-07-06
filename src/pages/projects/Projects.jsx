@@ -38,7 +38,7 @@ const Projects = () => {
                         {project.ProjName}
                       </h2>
                       <p
-                        className="mt-1 line-clamp-1 text-sm text-gray-800"
+                        className="mt-1 line-clamp-1 text-sm text-gray-800 break-all"
                         title={project.Projtitle}
                       >
                         {project.Projtitle}

@@ -42,12 +42,12 @@ const Footer = () => {
       </div>
 
       <div className=" p-4 text-center text-neutral-700  dark:text-neutral-200">
-        Developed by 
+        Developed by  : 
         <a
-          className="text-neutral-800 dark:text-neutral-400"
+          className="text-neutral-800 dark:text-neutral-400 hover"
           href="/"
         >
-          : Yash Sakre
+           Yash Sakre
         </a>
       </div>
     </footer>

@@ -22,13 +22,17 @@ li {
   position: relative;
 }
 
-/* li:hover::before {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: #2a68ff;
-  right: 0;
-  bottom: -10px;
-  color: #2a68ff;
-} */
+
+.hover {
+  background: 
+    linear-gradient(black 0 0) no-repeat
+     calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+  transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+}
+.hover:hover {
+  --p: 100%;
+  --t: .3s;
+  color: #fff;
+}
+
+
