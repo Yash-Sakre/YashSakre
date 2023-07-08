@@ -15,7 +15,7 @@ const HomeFooter = () => {
 
             <div className="w-full">
               <div className=" text-linkColor">Hire Me</div>
-              <a href="https://drive.google.com/file/d/1IGd5kz41pmZugLd_G14pGY0gn2SQv_hG/view?usp=sharing" target="__blank" className="flex flex-row gap-1 hover w-fit" > <AiOutlineLink className="text-[1.2rem]"/> Resume</a>
+              <a href="https://drive.google.com/file/d/1LWXT_tJo5LATLxx4rNndUb0r44qaBENm/view?usp=sharing" target="__blank" className="flex flex-row gap-1 hover w-fit" > <AiOutlineLink className="text-[1.2rem]"/> Resume</a>
             </div>
           </div>
           <div className="second flex justify-between xl:gap-60 gap-[2rem] md:mt-0 mt-7">
