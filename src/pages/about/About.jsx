@@ -27,7 +27,7 @@ const imageMap = {
 const About = () => {
   function resume() {
     window.open(
-      "https://drive.google.com/file/d/1LWXT_tJo5LATLxx4rNndUb0r44qaBENm/view?usp=sharing"
+      "https://drive.google.com/file/d/1k2CYVAvsIgZr2uM416WjYRS3ifqF7P7P/view?usp=sharing"
     );
   }
   return (
