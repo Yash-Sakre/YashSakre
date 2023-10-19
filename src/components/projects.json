@@ -10,13 +10,13 @@
       
     },
     {
-        "imagePath": "../assests/portfolio.png",
-        "ProjName": "Ys.tech",
-        "Projtitle": "Portfolio",
-        "ProjDesc": "An engaging frontend developer portfolio to showcase my expertise, highlight my projects, and attract clients and employers. Creating visually appealing designs and seamless user experiences to leave a lasting impression.",
-        "Github": "https://github.com/Yash-Sakre/YashSakre",
-        "Live": "https://yashsakre.tech/",
-        "tech": "React, Tailwind"
+        "imagePath": "../assests/ExerciseWhiz.png",
+        "ProjName": "Exercise Whiz",
+        "Projtitle": "Fitness & Workout Guide",
+        "ProjDesc": "Exercise Whiz is your go-to fitness resource, featuring video guides, YouTube integration, and a host of other features. It empowers individuals to attain their fitness goals while fostering a healthier, happier life.",
+        "Github": "https://github.com/Yash-Sakre/ExerciseWhiz",
+        "Live": "https://exercisewhiz.vercel.app/",
+        "tech": "React, Tailwind , Rapid API"
       },
       {
         "imagePath": "../assests/Opinhacks.png",

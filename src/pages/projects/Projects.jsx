@@ -1,11 +1,11 @@
 import test from "../../assets/finecode.png";
-import protfolio from "../../assets/portfolio.png";
+import ExerciseWhiz from "../../assets/ExerciseWhiz.png";
 import opinhacks from "../../assets/Opinhacks.png";
 import projects from "../../components/projects.json";
 const Projects = () => {
   const imageMap = {
     "../assests/finecode.png": test,
-    "../assests/portfolio.png": protfolio,
+    "../assests/ExerciseWhiz.png": ExerciseWhiz,
     "../assests/Opinhacks.png": opinhacks,
 
     // Map more image paths to imported images
@@ -23,7 +23,11 @@ const Projects = () => {
             <div className="rounded-lg">
               <div className="relative flex md:h-60 justify-center overflow-hidden rounded-lg ">
                 <div className="w-full border-2">
-                  <img className="rounded-lg" src={imageMap[project.imagePath]} alt="" />
+                  <img
+                    className="rounded-lg"
+                    src={imageMap[project.imagePath]}
+                    alt=""
+                  />
                 </div>
               </div>
 
@@ -47,23 +51,23 @@ const Projects = () => {
                   </div>
 
                   <div className="flex items-center justify-end">
-                    <p className="text-primary whitespace-nowrap rounded-xl font-semibold leading-tight flex gap-3">
+                    <p className="text-primary whitespace-nowrap rounded-2xl font-medium leading-tight flex gap-3">
                       <a
                         href={project.Github}
                         target="__blank"
-                        className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                        className="bg-white  text-black  py-2 px-4 border border-gray-400 rounded-lg hover:shadow-md"
                       >
                         Github
                       </a>
-                      {project.Live && (  // Add a conditional rendering statement for Live button
-                      <a
-                        href={project.Live}
-                        target="__blank"
-                        className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                      >
-                        Live
-                      </a>
-                    )}
+                      {project.Live && ( // Add a conditional rendering statement for Live button
+                        <a
+                          href={project.Live}
+                          target="__blank"
+                          className="bg-white  text-black  py-2 px-4 border border-gray-400 rounded-lg hover:shadow-md"
+                        >
+                          Live
+                        </a>
+                      )}
                     </p>
                   </div>
                 </div>
@@ -74,7 +78,7 @@ const Projects = () => {
                 <br />
                 <div className="mt-2">
                   <div>Tech Stack</div>
-                  <hr /> 
+                  <hr />
                   {project.tech}
                 </div>
               </div>
