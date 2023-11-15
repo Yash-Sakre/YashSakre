@@ -11,7 +11,6 @@ const Landing = () => {
     <About />
     <Projects />
     <Contact />
-
     </>
   )
 }

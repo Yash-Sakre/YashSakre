@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
         <div className=" ">
-          <img className="mx-auto md:w-[70%] rounded-full border-2 object-contain " src={Png1} alt="" />
+          <img className="mx-auto w-[60%] md:w-[70%] rounded-full border-2 object-contain " src={Png1} alt="" />
         </div>
       </div>
 

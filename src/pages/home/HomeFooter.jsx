@@ -8,7 +8,7 @@ const HomeFooter = () => {
         <hr />
         <div className="md:flex flex-row py-7 justify-between xl:gap-60 gap-20 flex-nowrap">
           <div className="first flex justify-between xl:gap-60 gap-[2rem]">
-            <div className=" w-[100%] ">
+            <div className=" min-w-[40%] ">
               Developing intuitive,
               <br /> responsive web interfaces.
             </div>
@@ -23,7 +23,7 @@ const HomeFooter = () => {
             <div className=" text-linkColor">Socials</div>
             <ul className="">
               <li><a href="https://www.linkedin.com/in/yash-sakre/" target="__blank" className="hover">Linkedin</a></li>
-              <li><a href="https://twitter.com/YashSakre4"  target="__blank" className="hover">Twitter</a></li>
+              <li><a href="https://twitter.com/YashSakre4"  target="__blank" className="hover">X(Twitter)</a></li>
               <li><a href="https://github.com/Yash-Sakre"  target="__blank" className="hover">Github</a></li>
             </ul>
           </div>

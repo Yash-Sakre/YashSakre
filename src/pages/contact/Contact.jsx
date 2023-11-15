@@ -9,7 +9,7 @@ const Contact = () => {
       <hr />
       <div className="md:flex justify-center items-center mt-[4rem] ">
         <div className="">
-          <img src={Png1} alt="" className="mx-auto md:w-[70%] rounded-full border-2 object-contain "/>
+          <img src={Png1} alt="" className="mx-auto w-[60%] md:w-[70%] rounded-full border-2 object-contain "/>
         </div>
 
         <div className="md:w-[50%] flex flex-col  gap-5">

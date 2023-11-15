@@ -25,7 +25,7 @@ const Home = () => {
               smooth={true}
               offset={-70}
               duration={500}>
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="" className="" />
             <p>Projects</p>
           </Link>
         </motion.div>
