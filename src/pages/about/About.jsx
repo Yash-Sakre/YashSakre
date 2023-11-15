@@ -8,10 +8,11 @@ import tailwindImage from "../../assets/tailwind.svg";
 import pythonImage from "../../assets/python.svg";
 import djangoImage from "../../assets/django.svg";
 import gitImage from "../../assets/git.svg";
+import java from "../../assets/java.png";
+import typescript from "../../assets/Typescript.png";
 // Add more image imports as needed
-import Png1 from "../../assets/about/Png1.png"
-
-
+import Png1 from "../../assets/about/Png1.png";
+import { AiOutlineLink } from "react-icons/ai";
 const imageMap = {
   "../assests/html5.svg": htmlImage,
   "../assests/css3.svg": cssImage,
@@ -21,62 +22,78 @@ const imageMap = {
   "../assests/python.svg": pythonImage,
   "../assests/django.svg": djangoImage,
   "../assests/git.svg": gitImage,
+  "../assests/java.png": java,
+  "../assests/Typescript.png": typescript,
 
   // Map more image paths to imported images
 };
 const About = () => {
   function resume() {
     window.open(
-      "https://drive.google.com/file/d/1k2CYVAvsIgZr2uM416WjYRS3ifqF7P7P/view?usp=sharing"
+      "https://drive.google.com/file/d/1SOhJ4B_qWFbKN8-6fFk8-qsMMLvBddte/view?usp=drive_link"
     );
   }
   return (
     <div className="xl:min-h-screen flex flex-col " id="about">
       <div className="text-[3rem]">About Me.</div>
       <hr />
-      <div className=" md:flex py-4 items-center lg:gap-60 ">
-        <div className="w-[100%] lg:w-[50%]">
-          A final year Computer Science student with a strong passion for
-          frontend development. Proficient in HTML, CSS, and JavaScript, I have
-          hands-on experience with modern frameworks like React and Tailwind
-          CSS. Through coding bootcamps, open-source projects, and coursework, I
-          have honed my problem-solving abilities and gained a solid
-          understanding of software development principles. Notably, I have
-          worked as a frontend developer in various Hackathon projects, thriving
-          in intense and collaborative environments.
-          <br />
-          <br />
-          As a fast learner with a strong work ethic, I constantly strive for
-          improvement and stay updated with the latest frontend trends. My goal
-          is to deliver high-quality, visually appealing code that ensures
-          exceptional user experiences.
-          <div>
-            <button
-              onClick={resume}
-              className="btn my-3 py-3 px-9 text-sm font-medium text-center border-2 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-            >
-              Resume
-            </button>
-          </div>
+      <div className=" md:flex flex-col py-4  items-center  ">
+        <div className="w-full justify-center md:text-2xl font-medium">
+          <span className="ml-[50%]">
+            I bring not just a passion for frontend development but a unique
+            blend
+          </span>
+          of creativity and curiosity. Beyond code, I find inspiration in
+          diverse experiences, infusing a distinctive perspective into my work
+          and fostering a holistic approach to problem-solving.
         </div>
-        <div className=" ">
-          <img className="mx-auto w-[60%] md:w-[70%] rounded-full border-2 object-contain " src={Png1} alt="" />
+        <div className="  flex items-center w-full mt-4    ">
+          <div className="md:flex  w-full gap-10">
+            <div className="  md:flex items-center  justify-center">
+              <div className="flex justify-center">
+                <img
+                  className=" w-[50%]  md:w-[40%] md:mr-[30%] mb-4 md:mb-0 rounded-full border-2 object-contain "
+                  src={Png1}
+                  alt=""
+                />
+              </div>
+              <div className=" text-sm font-medium w-full md:w-[40%] lg:w-[50%]">
+                Experienced as a frontend developer in intense and collaborative
+                Hackathon projects, I&apos;m also the proud winner of Kavach 23,
+                a national-level Cybersecurity Hackathon.
+              </div>
+            </div>
+            <div className="text-sm font-medium mt-10  w-full">
+              Thriving in collaborative environments, I bring a strong work
+              ethic, problem-solving prowess, and a commitment to delivering
+              visually captivating code for outstanding user experiences.
+              <div className="">
+                <button
+                  onClick={resume}
+                  className="btn flex justify-center items-center gap-1 my-3 py-2 px-4 hover border-2"
+                >
+                  <AiOutlineLink />
+                  <span>Resume</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="flex flex-col">
         <div className="text-[3rem]">Skills.</div>
         <hr />
-        <div className="flex flex-col flex-wrap mt-10">
-          <div className="flex flex-row flex-wrap gap-10 md:gap-20  items-center justify-center text-center">
+        <div className="flex flex-col  flex-wrap mt-5">
+          <div className="flex flex-row flex-wrap  md:gap-5 gap-2 items-center justify-center ">
             {skills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center">
+              <div key={index} className="flex justify-center items-center border-2 py-2 px-4 rounded-full gap-2 hover">
                 <img
-                  className="object-cover w-14 "
+                  className="object-cover w-5"
                   src={imageMap[skill.imagePath]}
                   alt={skill.skillName}
                 />
-                <div className="pt-4">{skill.skillName}</div>
+                <div className="">{skill.skillName}</div>
               </div>
             ))}
           </div>

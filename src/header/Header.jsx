@@ -3,8 +3,7 @@ import { Link } from "react-scroll";
 import { RxCross2 } from "react-icons/rx";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
-import { motion } from "framer-motion"
-import {  fadeIn } from "../components/Variant";
+
 import logo from "../assets/logo.png"
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -19,10 +18,11 @@ const Header = () => {
     { label: "Contact", to: "contact", offset: -70 },
   ];
 
+  
 
   return (
-    <motion.div
-      variants={fadeIn('up',0.3)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.7}}
+    <div
+      
       className="navBar flex justify-between items-center py-[1rem]  sticky top-0 z-[1000] bg-[#FFFBF5] dark:bg-black dark:text-white"
     >
       {/* Logo */}
@@ -77,7 +77,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
-    </motion.div>
+    </div>
   );
 };
 

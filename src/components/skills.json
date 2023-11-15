@@ -24,11 +24,20 @@
       "skillName": "Python"
     },
     {
+      "imagePath": "../assests/Typescript.png",
+      "skillName": "Typescript"
+    },
+    {
       "imagePath": "../assests/django.svg",
       "skillName": "Django"
+    },
+    {
+      "imagePath": "../assests/java.png",
+      "skillName": "Java"
     },
     {
       "imagePath": "../assests/git.svg",
       "skillName": "Git & Github"
     }
+    
   ]
