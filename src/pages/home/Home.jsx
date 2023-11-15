@@ -13,7 +13,7 @@ const Home = () => {
           Yash<br />
           Sakre
         </motion.div>
-        <motion.div animate={{y:0}} initial={{y:-1000}} transition={{ type: "spring", stiffness: 40 }} className="text-2rem md:m-5 flex flex-nowrap w-full ">
+        <motion.div animate={{y:0}} initial={{y:-1000}} transition={{ type: "spring", stiffness: 40 }} className="text-2rem md:m-5 flex flex-nowrap w-full  ">
           <img alt="" />
           I&#39;m a Independent front-end developer who combines design and
           programming to create captivating user experiences through efficient
@@ -21,12 +21,12 @@ const Home = () => {
         </motion.div>
 
         <motion.div animate={{y:0}} initial={{y:-1000}} transition={{ type: "spring", stiffness: 30 }} className="hidden md:block m-5 ">
-          <Link to="projects" className="cursor-pointer" spy={true}
+          <Link to="projects" className="cursor-pointer " spy={true}
               smooth={true}
               offset={-70}
               duration={500}>
             <img src={arrow} alt="" className="" />
-            <p>Projects</p>
+            <p className="hover">Projects</p>
           </Link>
         </motion.div>
       </div>
