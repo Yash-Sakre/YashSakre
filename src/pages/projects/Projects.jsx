@@ -2,6 +2,7 @@ import test from "../../assets/finecode.png";
 import ExerciseWhiz from "../../assets/ExerciseWhiz.png";
 import opinhacks from "../../assets/Opinhacks.png";
 import projects from "../../components/projects.json";
+import { AiOutlineLink } from "react-icons/ai";
 const Projects = () => {
   const imageMap = {
     "../assests/finecode.png": test,
@@ -14,73 +15,45 @@ const Projects = () => {
     <div className="min-h-screen" id="projects">
       <div className="text-[3rem]"> Projects.</div>
       <hr />
-      <div className="flex mt-2 flex-wrap ">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="relative mx-auto w-full max-w-lg pt-4 pb-[4rem]"
-          >
-            <div className="rounded-lg">
-              <div className="relative flex md:h-60 justify-center overflow-hidden rounded-lg ">
-                <div className="w-full border-2">
-                  <img
-                    className="rounded-lg"
-                    src={imageMap[project.imagePath]}
-                    alt=""
-                  />
-                </div>
+      <div className=" flex flex-col w-full gap-20 mt-10 mb-10">
+        {projects.map((items, index) => (
+          <div key={index} className="lg:flex gap-10 ">
+            <div className="">
+              <img
+                src={imageMap[items.imagePath]}
+                alt=""
+                className=" w-full lg:min-w-[100vh]  "
+              />
+            </div>
+            <div className="lg:mt-0 mt-3">
+              <div className="text-4xl font-medium underline">
+                {items.ProjName}
               </div>
-
-              <div className="">
-                <div className="mt-1 grid grid-cols-2">
-                  <div className="flex items-center">
-                    <div className="relative">
-                      <h2
-                        className="line-clamp-1 text-base font-medium text-gray-800 md:text-lg"
-                        title={project.ProjName}
-                      >
-                        {project.ProjName}
-                      </h2>
-                      <p
-                        className="mt-1 line-clamp-1 text-sm text-gray-800 break-all"
-                        title={project.Projtitle}
-                      >
-                        {project.Projtitle}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-end">
-                    <p className="text-primary whitespace-nowrap rounded-2xl font-medium leading-tight flex gap-3">
-                      <a
-                        href={project.Github}
-                        target="__blank"
-                        className="bg-white  text-black  py-2 px-4 border border-gray-400 rounded-lg hover:shadow-md"
-                      >
-                        Github
-                      </a>
-                      {project.Live && ( // Add a conditional rendering statement for Live button
-                        <a
-                          href={project.Live}
-                          target="__blank"
-                          className="bg-white  text-black  py-2 px-4 border border-gray-400 rounded-lg hover:shadow-md"
-                        >
-                          Live
-                        </a>
-                      )}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-2 border-t border-gray-200 pt-3">
-                  {project.ProjDesc}
-                </div>
-                <br />
-                <div className="mt-2">
-                  <div>Tech Stack</div>
-                  <hr />
-                  {project.tech}
-                </div>
+              <div className="text-2xl mt-2 mb-3">{items.Projtitle}</div>
+              <div className="mb-2">{items.ProjDesc}</div>
+              <hr />
+              <div className="mt-2 ">
+                Tech Stack - <span className="font-medium">{items.tech}</span>
+              </div>
+              <div className="flex items-center mt-4">
+                <p className=" flex gap-3">
+                  <a
+                    href={items.Github}
+                    target="__blank"
+                    className="py-1 px-4 border-2 hover flex justify-center items-center gap-1"
+                  >
+                    <AiOutlineLink /> Github
+                  </a>
+                  {items.Live && ( // Add a conditional rendering statement for Live button
+                    <a
+                      href={items.Live}
+                      target="__blank"
+                      className="py-1 px-4 border-2   hover flex justify-center items-center gap-1"
+                    >
+                      <AiOutlineLink /> Live
+                    </a>
+                  )}
+                </p>
               </div>
             </div>
           </div>
