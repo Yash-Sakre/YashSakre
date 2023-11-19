@@ -34,25 +34,25 @@ const About = () => {
     );
   }
   return (
-    <div className="xl:min-h-screen flex flex-col " id="about">
+    <div className="xl:min-h-screen flex flex-col" id="about">
       <div className="text-[3rem]">About Me.</div>
-      <hr />
+      <hr />  
       <div className=" md:flex flex-col py-4  items-center  ">
         <div className="w-full justify-center md:text-2xl font-medium">
           <span className="ml-[50%]">
             I bring not just a passion for frontend development but a unique
-            blend
+            blend 
           </span>
-          of creativity and curiosity. Beyond code, I find inspiration in
+          &nbsp;of creativity and curiosity. Beyond code, I find inspiration in
           diverse experiences, infusing a distinctive perspective into my work
           and fostering a holistic approach to problem-solving.
         </div>
         <div className="  flex items-center w-full mt-4    ">
           <div className="md:flex  w-full gap-10">
             <div className="  md:flex items-center  justify-center">
-              <div className="flex justify-center">
+              <div className="flex justify-center image-3d">
                 <img
-                  className=" w-[50%]  md:w-[40%] md:mr-[30%] mb-4 md:mb-0 rounded-full border-2 object-contain "
+                  className=" w-[50%]  md:w-[40%] md:mr-[30%] mb-4 md:mb-0 rounded-full border-2 object-contain about-card"
                   src={Png1}
                   alt=""
                 />

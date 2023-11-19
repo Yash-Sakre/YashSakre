@@ -12,17 +12,18 @@ const Projects = () => {
     // Map more image paths to imported images
   };
   return (
-    <div className="min-h-screen" id="projects">
+    <div className="min-h-screen " id="projects">
       <div className="text-[3rem]"> Projects.</div>
       <hr />
-      <div className=" flex flex-col w-full gap-20 mt-10 mb-10">
+      <div className=" flex flex-col w-full gap-20 mt-10 mb-10 ">
         {projects.map((items, index) => (
           <div key={index} className="lg:flex gap-10 ">
-            <div className="">
+            <div className="image-3d">
               <img
                 src={imageMap[items.imagePath]}
                 alt=""
-                className=" w-full lg:min-w-[100vh]  "
+                className=" w-full lg:min-w-[100vh] card "
+                
               />
             </div>
             <div className="lg:mt-0 mt-3">

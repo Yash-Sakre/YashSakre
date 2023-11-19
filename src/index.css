@@ -3,17 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-    font-family: 'DM Mono', monospace;
-  background-color: #FFFBF5;
+  font-family: "DM Mono", monospace;
+  background-color: #fffbf5;
   color: #000000;
+  height: 100vh;
 }
 
 li {
@@ -22,25 +24,47 @@ li {
   position: relative;
 }
 
-
 .hover {
-  background: 
-    linear-gradient(black 0 0) no-repeat
-     calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
-  transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+  background: linear-gradient(black 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.08em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
 }
 .hover:hover {
   --p: 100%;
-  --t: .3s;
+  --t: 0.3s;
   color: #fff;
 }
+
+.image-3d {
+  perspective: 60rem;
+}
+
+.card {
+  transition: rotate 400ms, scale 200ms;
+}
+
+.about-card {
+  transition: rotate 900ms, scale 100ms;
+}
+
+.about-card:hover {
+  rotate: y 360deg;
+  scale: 1.1;
+}
+
+.card:hover {
+  rotate: y 8deg;
+  scale: 1.1;
+}
+
 
 
 @keyframes slideIn {
   from {
     transform: translateX(100%);
   }
-  to {  
+  to {
     transform: translateY(0);
   }
 }
