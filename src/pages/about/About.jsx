@@ -30,7 +30,7 @@ const imageMap = {
 const About = () => {
   function resume() {
     window.open(
-      "https://drive.google.com/file/d/1SOhJ4B_qWFbKN8-6fFk8-qsMMLvBddte/view?usp=drive_link"
+      "https://drive.google.com/file/d/1a-ggjMH8qOT_B0rd64yMfQ6eA6UYqThy/view?usp=sharing"
     );
   }
   return (
