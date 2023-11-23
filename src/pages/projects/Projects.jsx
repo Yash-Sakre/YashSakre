@@ -1,12 +1,12 @@
 import test from "../../assets/finecode.png";
-import ExerciseWhiz from "../../assets/ExerciseWhiz.png";
+import Flexfit from "../../assets/Flexfit.png";
 import opinhacks from "../../assets/Opinhacks.png";
 import projects from "../../components/projects.json";
 import { AiOutlineLink } from "react-icons/ai";
 const Projects = () => {
   const imageMap = {
     "../assests/finecode.png": test,
-    "../assests/ExerciseWhiz.png": ExerciseWhiz,
+    "../assests/Flexfit.png": Flexfit,
     "../assests/Opinhacks.png": opinhacks,
 
     // Map more image paths to imported images
