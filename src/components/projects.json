@@ -1,9 +1,9 @@
 [
   {
     "imagePath": "../assests/Flexfit.png",
-    "ProjName": "Exercise Whiz",
+    "ProjName": "FlexFit",
     "Projtitle": "Fitness & Workout Guide",
-    "ProjDesc": "Exercise Whiz is your go-to fitness resource, featuring video guides, YouTube integration, and a host of other features. It empowers individuals to attain their fitness goals while fostering a healthier, happier life.",
+    "ProjDesc": "FlexFit is your go-to fitness resource, featuring video guides, YouTube integration, and a host of other features. It empowers individuals to attain their fitness goals while fostering a healthier, happier life.",
     "Github": "https://github.com/Yash-Sakre/FlexFit",
     "Live": "https://exercisewhiz.vercel.app/",
     "tech": "React, Tailwind , Restful API"
