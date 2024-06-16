@@ -1,5 +1,15 @@
 [
   {
+    "imagePath": "../assests/TypeArena.png",
+    "ProjName": "TypeArena",
+    "Projtitle": "Typing Speed Test",
+    "ProjDesc": "TypeArena is a React and TailwindCSS-based platform inspired by MonkeyType, designed to enhance your typing skills. It offers a sleek, minimalistic interface for testing and improving typing speed and accuracy.",
+    "Github": "https://github.com/Yash-Sakre/TypeArena",
+    "Live": "https://type-arena.vercel.app/",
+    "tech": " React, TypeScript, Tailwind "
+    
+  },
+  {
     "imagePath": "../assests/Flexfit.png",
     "ProjName": "FlexFit",
     "Projtitle": "Fitness & Workout Guide",
