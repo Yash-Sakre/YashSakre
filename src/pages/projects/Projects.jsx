@@ -9,7 +9,7 @@ const Projects = () => {
     "../assests/finecode.png": test,
     "../assests/Flexfit.png": Flexfit,
     "../assests/Opinhacks.png": opinhacks,
-    "../assests/TypeArena.png": TypeArena
+    "../assests/TypeArena.png": TypeArena,
 
     // Map more image paths to imported images
   };
@@ -25,7 +25,6 @@ const Projects = () => {
                 src={imageMap[items.imagePath]}
                 alt=""
                 className=" w-full lg:min-w-[100vh] card "
-                
               />
             </div>
             <div className="mt-3 lg:mt-0">
