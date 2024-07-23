@@ -1,14 +1,15 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../assets/arrow.png";
 import memoji from "../../assets/memoji.png";
 import HomeFooter from "./HomeFooter";
 import { motion } from "framer-motion";
 const Home = () => {
-  const scrollToProjects = () => {
-    const element = "/#projects";
+  // const scrollToProjects = () => {
+  //   const element = "/#projects";
 
-    element.scrollIntoView({ behavior: "smooth" });
-  };
+  //   element.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <div className="flex flex-wrap" id="main">
       <div className="min-h-[60vh] md:flex items-end xl:gap-40 gap-25">
@@ -27,7 +28,7 @@ const Home = () => {
           animate={{ y: 0 }}
           initial={{ y: -1000 }}
           transition={{ type: "spring", stiffness: 40 }}
-          className="text-2rem md:m-5 flex flex-nowrap w-full  "
+          className="flex w-full text-2rem md:m-5 flex-nowrap "
         >
           <img alt="" />
           I&#39;m a Independent front-end developer who combines design and
@@ -39,12 +40,12 @@ const Home = () => {
           animate={{ y: 0 }}
           initial={{ y: -1000 }}
           transition={{ type: "spring", stiffness: 30 }}
-          className="hidden md:block m-5 "
+          className="hidden m-5 md:block "
         >
           <Link
             to="/#projects"
             className="cursor-pointer "
-            onClick={() => scrollToProjects()}
+            // onClick={() => scrollToProjects()}
           >
             <img src={arrow} alt="" className="" />
             <p className="hover">Projects</p>

@@ -1,10 +1,11 @@
+import React from 'react';
 import { RiTwitterXFill } from "react-icons/ri"
 
 const Footer = () => {
   return (
-    <footer className=" text-center text-white ">
+    <footer className="text-center text-white ">
       <div className="container pt-9">
-        <div className="mb-3 flex justify-center">
+        <div className="flex justify-center mb-3">
           
           <a href="https://twitter.com/YashSakre4" target="__blank" className="mr-9 text-neutral-800 dark:text-neutral-200">
           <RiTwitterXFill size={20}/>
@@ -14,7 +15,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/yash-sakre/" className="mr-9 text-neutral-800 dark:text-neutral-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="w-4 h-4"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -24,7 +25,7 @@ const Footer = () => {
           <a href="https://github.com/Yash-Sakre" className="text-neutral-800 dark:text-neutral-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="w-4 h-4"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -34,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=" p-4 text-center text-neutral-700  dark:text-neutral-200">
+      <div className="p-4 text-center  text-neutral-700 dark:text-neutral-200">
         Developed by  : 
         <a
           className="text-neutral-800 dark:text-neutral-400 hover"

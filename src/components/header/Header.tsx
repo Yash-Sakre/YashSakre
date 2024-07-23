@@ -1,11 +1,12 @@
+import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
 import { RxCross2 } from "react-icons/rx";
 import { CiMenuFries } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../components/Variant";
-import logo from "../assets/logo.png";
+import { fadeIn } from "../Variant";
+import logo from "../../assets/logo.png";
+
 const Header = () => {
   const [nav, setNav] = useState(false);
 
@@ -25,18 +26,18 @@ const Header = () => {
     }
   }, [isHome, location]);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     closeNav();
     navigate("/");
     const element = document.getElementById(id);
-    
-    element.scrollIntoView({ behavior: "smooth" });
+
+    element && element.scrollIntoView({ behavior: "smooth" });
   };
   const menuItems = [
-    { label: "Home", to: "/#main"},
+    { label: "Home", to: "/#main" },
     { label: "About", to: "/#about" },
-    { label: "Projects", to: "/#projects"},
-    { label: "Contact", to: "/#contact"},
+    { label: "Projects", to: "/#projects" },
+    { label: "Contact", to: "/#contact" },
   ];
 
   return (
@@ -57,20 +58,20 @@ const Header = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex gap-8">
+      <div className="hidden gap-8 md:flex">
         <ul className="flex gap-1">
           {menuItems.map((item) => (
             <li
               key={item.label}
-              className="menuList text-3rem border-2 rounded-full py-1 px-3 border-black border-opacity-30 hover:bg-black hover:text-white"
+              className="px-3 py-1 border-2 border-black rounded-full menuList text-3rem border-opacity-30 hover:bg-black hover:text-white"
             >
               <Link
                 to={item.to}
-                  // spy={true}
-                  // smooth={true} 
-                  // offset={item.offset}
-                  // duration={500}
-                  onClick={() => scrollToSection(item.to)}
+                // spy={true}
+                // smooth={true}
+                // offset={item.offset}
+                // duration={500}
+                onClick={() => scrollToSection(item.to)}
               >
                 {item.label}
               </Link>
@@ -80,13 +81,13 @@ const Header = () => {
       </div>
 
       {/* Hamburger Icon */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="z-10 md:hidden">
         {nav ? (
-          <div className="border-2 border-black border-opacity-10 p-2 rounded-full">
+          <div className="p-2 border-2 border-black rounded-full border-opacity-10">
             <RxCross2 />
           </div>
         ) : (
-          <div className="border-2 border-black border-opacity-10 p-2 rounded-full">
+          <div className="p-2 border-2 border-black rounded-full border-opacity-10">
             <CiMenuFries />
           </div>
         )}
@@ -101,12 +102,8 @@ const Header = () => {
         } md:hidden`}
       >
         {menuItems.map((item) => (
-          <li key={item.label} className="menuList text-2xl ">
-            <Link
-              to={item.to}
-              onClick={() => scrollToSection(item.to)}
-              
-            >
+          <li key={item.label} className="text-2xl menuList ">
+            <Link to={item.to} onClick={() => scrollToSection(item.to)}>
               {item.label}
             </Link>
           </li>

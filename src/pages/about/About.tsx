@@ -1,32 +1,7 @@
-// import html from "../../assets/html.png"
-import skills from "../../components/skills.json";
-import htmlImage from "../../assets/html5.svg";
-import cssImage from "../../assets/css3.svg";
-import reactImage from "../../assets/react.svg";
-import javascriptImage from "../../assets/javascript.svg";
-import tailwindImage from "../../assets/tailwind.svg";
-import pythonImage from "../../assets/python.svg";
-import djangoImage from "../../assets/django.svg";
-import gitImage from "../../assets/git.svg";
-import java from "../../assets/java.png";
-import typescript from "../../assets/Typescript.png";
-// Add more image imports as needed
-import Png1 from "../../assets/about/Png1.png";
-import { AiOutlineLink } from "react-icons/ai";
-const imageMap = {
-  "../assests/html5.svg": htmlImage,
-  "../assests/css3.svg": cssImage,
-  "../assests/react.svg": reactImage,
-  "../assests/javascript.svg": javascriptImage,
-  "../assests/tailwind.svg": tailwindImage,
-  "../assests/python.svg": pythonImage,
-  "../assests/django.svg": djangoImage,
-  "../assests/git.svg": gitImage,
-  "../assests/java.png": java,
-  "../assests/Typescript.png": typescript,
 
-  // Map more image paths to imported images
-};
+import { AiOutlineLink } from "react-icons/ai";
+import {Skills} from "../../constants/skills"
+import Png1 from "../../assets/about/Png1.png";
 const About = () => {
   function resume() {
     window.open(
@@ -36,12 +11,12 @@ const About = () => {
   return (
     <div className="flex flex-col xl:min-h-[80vh]" id="about">
       <div className="text-[3rem]">About Me.</div>
-      <hr />  
+      <hr />
       <div className="flex-col items-center py-4 md:flex">
         <div className="justify-center w-full font-medium md:text-2xl">
           <span className="ml-[50%]">
             I bring not just a passion for frontend development but a unique
-            blend 
+            blend
           </span>
           &nbsp;of creativity and curiosity. Beyond code, I find inspiration in
           diverse experiences, infusing a distinctive perspective into my work
@@ -86,11 +61,14 @@ const About = () => {
         <hr />
         <div className="flex flex-col flex-wrap mt-5">
           <div className="flex flex-row flex-wrap items-center justify-center gap-2 md:gap-5 ">
-            {skills.map((skill, index) => (
-              <div key={index} className="flex items-center justify-center gap-2 px-4 py-2 border-2 rounded-full hover">
+            {Skills.map((skill, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center gap-2 px-4 py-2 border-2 rounded-full hover"
+              >
                 <img
                   className="object-cover w-5"
-                  src={imageMap[skill.imagePath]}
+                  src={skill.imagePath}
                   alt={skill.skillName}
                 />
                 <div className="">{skill.skillName}</div>

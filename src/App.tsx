@@ -1,9 +1,10 @@
+import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 
-import Header from "./header/Header";
+import Header from "./components/header/Header";
 
-import Footer from "./Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import Landing from "./pages/Landing/Landing";
 import New from "./pages/New";
 function App() {

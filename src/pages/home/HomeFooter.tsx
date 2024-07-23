@@ -6,7 +6,7 @@ const HomeFooter = () => {
     <motion.div animate={{y:0}} initial={{y:-1000}} transition={{ type: "spring", stiffness: 50 }} >
       <div className=" md:mt-[3rem] w-full pb-3">
         <hr />
-        <div className="md:flex flex-row py-7 justify-between xl:gap-60 gap-20 flex-nowrap">
+        <div className="flex-row justify-between gap-20 md:flex py-7 xl:gap-60 flex-nowrap">
           <div className="first flex justify-between xl:gap-60 gap-[2rem]">
             <div className=" min-w-[40%] ">
               Developing intuitive,
@@ -27,7 +27,7 @@ const HomeFooter = () => {
               <li><a href="https://github.com/Yash-Sakre"  target="__blank" className="hover">Github</a></li>
             </ul>
           </div>
-          <div className=""> <a href="mailto:yashsakre940@gmail.com" className="md:flex flex-row gap-1  hover"> yashsakre940@gmail.com</a></div>
+          <div className=""> <a href="mailto:yashsakre940@gmail.com" className="flex-row gap-1 md:flex hover"> yashsakre940@gmail.com</a></div>
           </div>
         </div>
       </div>

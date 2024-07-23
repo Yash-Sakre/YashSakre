@@ -1,28 +1,17 @@
-import test from "../../assets/finecode.png";
-import Flexfit from "../../assets/Flexfit.png";
-import TypeArena from "../../assets/TypeArena.png";
-import opinhacks from "../../assets/Opinhacks.png";
-import projects from "../../components/projects.json";
+
+import { ProjectsList } from "../../constants/projects";
 import { AiOutlineLink } from "react-icons/ai";
 const Projects = () => {
-  const imageMap = {
-    "../assests/finecode.png": test,
-    "../assests/Flexfit.png": Flexfit,
-    "../assests/Opinhacks.png": opinhacks,
-    "../assests/TypeArena.png": TypeArena,
-
-    // Map more image paths to imported images
-  };
   return (
     <div className="min-h-screen " id="projects">
       <div className="text-[3rem]"> Projects.</div>
       <hr />
       <div className="flex flex-col w-full gap-20 mt-10 mb-10 ">
-        {projects.map((items, index) => (
+        {ProjectsList.map((items, index) => (
           <div key={index} className="gap-10 lg:flex ">
             <div className="image-3d">
               <img
-                src={imageMap[items.imagePath]}
+                src={items.imagePath}
                 alt=""
                 className=" w-full lg:min-w-[100vh] card "
               />
