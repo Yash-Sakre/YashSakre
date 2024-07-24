@@ -5,34 +5,14 @@ import { CiMenuFries } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variant";
-import logo from "../../assets/logo.png";
+import LightLogo from "../../assets/logo.svg";
+import DarkLogo from "../../assets/logo.png";
+import { ModeToggle } from "../mode-toggle";
+import { useTheme } from "../../hooks/useTheme";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-
   const handleClick = () => setNav(!nav);
-  const closeNav = () => setNav(false);
-  const navigate = useNavigate();
-
-  const [isHome, setIsHome] = useState(true);
-  const location = useLocation();
-
-  useEffect(() => {
-    const currentRoute = location.pathname;
-    if (currentRoute === "/") {
-      setIsHome(true);
-    } else {
-      setIsHome(false);
-    }
-  }, [isHome, location]);
-
-  const scrollToSection = (id: string) => {
-    closeNav();
-    navigate("/");
-    const element = document.getElementById(id);
-
-    element && element.scrollIntoView({ behavior: "smooth" });
-  };
   const menuItems = [
     { label: "Home", to: "/#main" },
     { label: "About", to: "/#about" },
@@ -40,76 +20,61 @@ const Header = () => {
     { label: "Contact", to: "/#contact" },
   ];
 
+  const { theme } = useTheme();
+
   return (
-    <motion.div
-      variants={fadeIn("up", 0.3)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
-      className="navBar flex justify-between items-center py-[1rem]  sticky top-0 z-[1000] bg-[#FFFBF5] dark:bg-black dark:text-white"
-    >
-      {/* Logo */}
-      <div className="">
-        <h1 className="logo text-[2rem] text-blueColor">
-          <a href="/">
-            <img src={logo} alt="" className="w-10 md:w-14" />
-          </a>
-        </h1>
-      </div>
+    <nav className="fixed top-0 z-20 w-[85%]  backdrop-blur-lg">
+      <div className="flex flex-wrap items-center justify-between p-4 max-w-screen ">
+        <a
+          href="./"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src={theme === "dark" ? LightLogo : DarkLogo}
+            alt=""
+            className="w-14 "
+          />
+        </a>
+        <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+          <ModeToggle />
 
-      {/* Desktop Menu */}
-      <div className="hidden gap-8 md:flex">
-        <ul className="flex gap-1">
-          {menuItems.map((item) => (
-            <li
-              key={item.label}
-              className="px-3 py-1 border-2 border-black rounded-full menuList text-3rem border-opacity-30 hover:bg-black hover:text-white"
-            >
-              <Link
-                to={item.to}
-                // spy={true}
-                // smooth={true}
-                // offset={item.offset}
-                // duration={500}
-                onClick={() => scrollToSection(item.to)}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded={nav ? "true" : "false"}
+            onClick={handleClick}
+          >
+            <span className="sr-only">Open main menu</span>
+            {nav ? (
+              <RxCross2 className="w-5 h-5 text-foreground" />
+            ) : (
+              <CiMenuFries className="w-5 h-5 text-foreground" />
+            )}
+          </button>
+        </div>
+        <div
+          className={`${
+            nav ? "block" : "hidden"
+          } items-center justify-between w-full md:flex md:w-auto md:order-1 md:border border-0 border-foreground/20 px-3 py-2 rounded-full `}
+          id="navbar-sticky"
+        >
+          <ul className="flex flex-col justify-center w-full gap-2 py-2 mt-4 font-medium border rounded-lg border-foreground/20 md:p-0 bg-background md:bg-transparent rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:justify-start">
+            {menuItems.map((item) => (
+              <li key={item.label} className="px-2 md:p-0">
+                <a
+                  href={item.to}
+                  className="block px-3 py-2 border rounded-lg border-foreground/20 md:rounded-full hover:bg-foreground hover:text-background md:border-none "
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-
-      {/* Hamburger Icon */}
-      <div onClick={handleClick} className="z-10 md:hidden">
-        {nav ? (
-          <div className="p-2 border-2 border-black rounded-full border-opacity-10">
-            <RxCross2 />
-          </div>
-        ) : (
-          <div className="p-2 border-2 border-black rounded-full border-opacity-10">
-            <CiMenuFries />
-          </div>
-        )}
-      </div>
-
-      {/* Mobile Menu */}
-      <ul
-        className={`${
-          nav
-            ? " animate-slide-in absolute top-14 left-2 h-[40vh] rounded-xl  w-full flex flex-col gap-5 justify-center items-center bg-[#FCF5ED]   "
-            : "hidden"
-        } md:hidden`}
-      >
-        {menuItems.map((item) => (
-          <li key={item.label} className="text-2xl menuList ">
-            <Link to={item.to} onClick={() => scrollToSection(item.to)}>
-              {item.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </motion.div>
+    </nav>
   );
 };
 
