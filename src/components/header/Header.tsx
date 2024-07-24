@@ -1,14 +1,11 @@
-import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 import { CiMenuFries } from "react-icons/ci";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../Variant";
+import { useState } from "react";
 import LightLogo from "../../assets/logo.svg";
 import DarkLogo from "../../assets/logo.png";
 import { ModeToggle } from "../mode-toggle";
 import { useTheme } from "../../hooks/useTheme";
+import { Button } from "../ui/button";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -35,13 +32,14 @@ const Header = () => {
             className="w-14 "
           />
         </a>
-        <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+        <div className="flex gap-2 md:order-2 rtl:space-x-reverse">
           <ModeToggle />
 
-          <button
+          <Button
+            variant="ghost"
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 "
             aria-controls="navbar-sticky"
             aria-expanded={nav ? "true" : "false"}
             onClick={handleClick}
@@ -52,7 +50,7 @@ const Header = () => {
             ) : (
               <CiMenuFries className="w-5 h-5 text-foreground" />
             )}
-          </button>
+          </Button>
         </div>
         <div
           className={`${
@@ -66,6 +64,7 @@ const Header = () => {
                 <a
                   href={item.to}
                   className="block px-3 py-2 border rounded-lg border-foreground/20 md:rounded-full hover:bg-foreground hover:text-background md:border-none "
+                  onClick={handleClick}
                 >
                   {item.label}
                 </a>
