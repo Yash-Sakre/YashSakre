@@ -1,4 +1,3 @@
-
 import { ProjectsList } from "../../constants/projects";
 import { AiOutlineLink } from "react-icons/ai";
 const Projects = () => {
@@ -8,12 +7,12 @@ const Projects = () => {
       <hr />
       <div className="flex flex-col w-full gap-20 mt-10 mb-10 ">
         {ProjectsList.map((items, index) => (
-          <div key={index} className="gap-10 lg:flex ">
+          <div key={index} className="gap-10 p-4 border rounded-lg lg:flex">
             <div className="image-3d">
               <img
                 src={items.imagePath}
                 alt=""
-                className=" w-full lg:min-w-[100vh] card "
+                className=" w-full lg:min-w-[100vh] card rounded-sm "
               />
             </div>
             <div className="mt-3 lg:mt-0">

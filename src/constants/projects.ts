@@ -3,8 +3,19 @@ import TypeArena from "../assets/TypeArena.png";
 import finecode from "../assets/finecode.png";
 import Flexfit from "../assets/Flexfit.png";
 import opinhacks from "../assets/Opinhacks.png";
+import SNRKS from "../assets/SNKRS.png"
 
 export const ProjectsList: Projects[] = [
+  {
+    imagePath: SNRKS,
+    ProjName: "SNKRS.",
+    Projtitle: "Sneaker Ecommerce Website",
+    ProjDesc:
+      "SNKRS. is a React and TailwindCSS-powered e-commerce platform that features over 10,000 products, sourced in real-time from the StockX API. It offers a seamless, optimized user experience with advanced filtering for smooth product discovery and responsive design across all devices.",
+    Github: "https://github.com/Yash-Sakre/Sneakers",
+    Live: "https://sneakers-plum.vercel.app/",
+    tech: " React, TypeScript, Tailwind,StockX API ",
+  },
   {
     imagePath: TypeArena,
     ProjName: "TypeArena",
@@ -24,24 +35,5 @@ export const ProjectsList: Projects[] = [
     Github: "https://github.com/Yash-Sakre/FlexFit",
     Live: "https://exercisewhiz.vercel.app/",
     tech: "React, Tailwind , Restful API",
-  },
-  {
-    imagePath: opinhacks,
-    ProjName: "OpinHacks",
-    Projtitle: "36-Hour Hackathon Website ",
-    ProjDesc:
-      "A dynamic hackathon website to unite passionate individuals, foster innovation, and provide a platform for collaborative problem-solving. Featuring event details, registration, project submissions, and engaging community features to promote creativity and teamwork.",
-    Github: "https://github.com/JayashTripathy/OpInHacks",
-    tech: "React, Tailwind",
-  },
-  {
-    imagePath: finecode,
-    ProjName: "FineCode",
-    Projtitle: "Code Analysis Platform",
-    ProjDesc:
-      "FineCode is a project that revolutionizes coding assignment evaluation by providing a platform for students to register, submit, and evaluate their codes. It offers visual analysis, rankings, and valuable feedback to instructors and students.",
-    Github: "https://github.com/Yash-Sakre/FineCode",
-
-    tech: " Javascript, Python, Django, HTML CSS",
   },
 ];
